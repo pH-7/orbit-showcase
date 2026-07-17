@@ -1,0 +1,30 @@
+{
+  "name": "orbit-showcase",
+  "version": "1.0.0",
+  "description": "A mission-control showcase built with the Orbit TypeScript framework.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Pierre-Henry Soria <hi@ph7.me> (https://ph7.me)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pH-7/orbit-showcase.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/src/server.js",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@ph7/orbit": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
