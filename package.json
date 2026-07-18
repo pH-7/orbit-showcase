@@ -23,8 +23,8 @@
     "@ph7/orbit": "^0.2.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
+    "@types/node": "^26.1.1",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.2"
+    "typescript": "^7.0.2"
   }
 }
