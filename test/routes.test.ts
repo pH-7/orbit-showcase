@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { appConfig } from '@ph7/orbit';
 import type { OrbitRequest } from '@ph7/orbit';
 import { route } from '../src/routes.js';
 
@@ -36,6 +37,7 @@ test('status API identifies the Orbit framework', () => {
   const body = JSON.parse(response?.body ?? '{}') as Record<string, unknown>;
   assert.equal(body.status, 'ok');
   assert.equal(body.framework, '@ph7/orbit');
+  assert.equal(body.frameworkVersion, appConfig.version);
 });
 
 test('API routes support CORS preflight', () => {

@@ -1,3 +1,4 @@
+import { appConfig } from '@ph7/orbit';
 import type { OrbitRequest, RouteResponse } from '@ph7/orbit';
 import { filterMissions, findMission, missions } from './data.js';
 import { html, json, methodNotAllowed, options } from './responses.js';
@@ -54,7 +55,7 @@ export function route({ method, url }: OrbitRequest): RouteResponse | null {
       name: 'Orbit Launchpad',
       status: 'ok',
       framework: '@ph7/orbit',
-      frameworkVersion: '0.2.0',
+      frameworkVersion: appConfig.version,
       uptimeSeconds: Math.round(process.uptime()),
       timestamp: new Date().toISOString()
     });
