@@ -2,6 +2,8 @@
 
 A mission-control application built with [Orbit](https://github.com/pH-7/orbit). It demonstrates server-rendered pages, dynamic routes, JSON APIs, query filtering, static assets, health checks, and custom error pages with one runtime dependency.
 
+Mission records, availability figures and telemetry are simulated demo data. The status endpoint reports the running process and installed Orbit version; it does not verify an external mission-control service.
+
 ## Run
 
 Use Node.js 22 or newer.

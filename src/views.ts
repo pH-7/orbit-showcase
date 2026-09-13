@@ -37,7 +37,7 @@ function layout(title: string, active: NavigationItem, content: string, script =
         <span>ORBIT <b>Launchpad</b></span>
       </a>
       <nav aria-label="Primary navigation">${navigation(active)}</nav>
-      <div class="system-state"><span aria-hidden="true"></span> All systems nominal</div>
+      <div class="system-state"><span aria-hidden="true"></span> Simulated mission data</div>
     </header>
     ${content}
     <footer>

@@ -64,6 +64,7 @@ export function route({ method, url }: OrbitRequest): RouteResponse | null {
   if (pathname === '/api/telemetry') {
     const seconds = Math.floor(Date.now() / 1000);
     return json({
+      simulated: true,
       availability: `${(99.95 + (seconds % 3) / 100).toFixed(2)}%`,
       downlinkTerabytes: (18.4 + (seconds % 10) / 100).toFixed(2),
       nextContactMinutes: 8,
