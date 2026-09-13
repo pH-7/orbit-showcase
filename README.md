@@ -9,7 +9,7 @@ Mission records, availability figures and telemetry are simulated demo data. The
 Use Node.js 22 or newer.
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
