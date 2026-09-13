@@ -14,7 +14,7 @@ async function updateTelemetry() {
       contact.textContent = `${String(data.nextContactMinutes).padStart(2, '0')}:${String(data.nextContactSeconds).padStart(2, '0')}`;
     }
   } catch {
-    // The server-rendered values remain available when live telemetry is offline.
+    // The server-rendered values remain available when the simulated telemetry endpoint is unavailable.
   }
 }
 
